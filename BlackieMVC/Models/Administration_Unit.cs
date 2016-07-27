@@ -1,16 +1,30 @@
-﻿using System;
-
 namespace BlackieMVC.Models
 {
-  public class Administration_Unit
-  {
-    public int Id { get; set; }
-    public string Name { get; set; }
-    public DateTime CreatedDate { get; set; }
-    public string CreatedBy { get; set; }
-    public DateTime ModifiedDate { get; set; }
-    public string ModifiedBy { get; set; }
-    public string History { get; set; }
-    public bool IsActive { get; set; }
-  }
+    using System;
+    using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+    using System.Data.Entity.Spatial;
+
+    public partial class Administration_Unit
+    {
+        [Key]
+        public int Unit_Id { get; set; }
+
+        public string Unit_Name { get; set; }
+
+        public string Unit_Description { get; set; }
+
+        public DateTime? Unit_CreatedDate { get; set; }
+
+        public string Unit_CreatedBy { get; set; }
+
+        public DateTime? Unit_ModifiedDate { get; set; }
+
+        public string Unit_ModifiedBy { get; set; }
+
+        public string Unit_History { get; set; }
+
+        public bool? Unit_IsActive { get; set; }
+    }
 }
