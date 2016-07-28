@@ -166,7 +166,6 @@
     <Compile Include="Models\Administration_Unit.cs" />
     <Compile Include="Models\Form_Alert.cs" />
     <Compile Include="Models\DBInfoQuest.cs" />
-    <Compile Include="Models\Model1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -12,6 +12,8 @@ namespace BlackieMVC.Models
     {
     }
 
+    public virtual DbSet<Administration_Form> Administration_Form { get; set; }
+
     public virtual DbSet<Administration_Unit> Administration_Unit { get; set; }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
